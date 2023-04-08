@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #2c786c; 
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+/*contenido*/
+.contenido{
+    background: #faf5e4; 
+    width: 80%;
+    height: 100%;
+}
+
+.contenido-general{
+    gap: 2rem;
+}
+
+input{
+    color: bl;
+}

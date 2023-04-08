@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list con POO Project</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="contenido">
+        <h1>To do list</h1>
+      <form class="contenido-general">
+        <label class="contenido-label" for="nueva-tarea">Agregar nueva tarea:</label>
+        <input class="contenido-tarea" type="text" placeholder="Escribir tarea.."/>
+        <button class="contenido-enviar" type="button">Agregar</button>
+        <span class="contenido-contador" class="contador">0</span>
+        <button class="contenido-eliminar" type="reset">Eliminar todas las tareas</button>
+        <ul class="lista-tareas"></ul>
+        <div class="info"></div>
+      </form>
+      
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
