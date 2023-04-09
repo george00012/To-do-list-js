@@ -1,27 +1,129 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faustina:wght@400;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    background: #2c786c; 
+body {
+    background: #2c786c;
     height: 100vh;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
 }
 
+img {
+    width: 2rem;
+    height: 2rem;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 /*contenido*/
-.contenido{
-    background: #faf5e4; 
-    width: 80%;
-    height: 100%;
+.contenido {
+    padding: 1rem;
+    background-color: #fff;
+    height: fit-content;
+    width: 100%;
+    margin: 1rem;
+    border-radius: 1rem;
 }
 
-.contenido-general{
-    gap: 2rem;
+@media screen and (min-width: 758px) {
+    .contenido {
+        width: 37rem;
+        padding: 2rem;
+    }
 }
 
-input{
-    color: bl;
+.contenido-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 1rem 0 0.5rem 0;
+}
+
+@media screen and (min-width: 758px) {
+    .contenido-titulo {
+        padding: 0 0 1rem 0;
+        gap: 1.3rem;
+    }
+
+    .contenido-titulo h1 {
+        font-size: 2.6rem;
+    }
+}
+
+.contenido-titulo h1 {
+    font-size: 2.2rem;
+    font-family: 'Headland One', serif;
+}
+
+.contenido-general {
+    gap: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.contenido-general-contenido {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3.8rem;
+}
+
+.contenido-tarea {
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid rgb(163, 160, 160);
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-family: 'Faustina', serif;
+}
+
+li {
+    list-style: none;
+    background-color: #329b8b;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem 0.5rem 0.8rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.35rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-general-detalles {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0 0 0;
+}
+
+.contenido-contador {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.eliminarLista {
+    background-image: url("../1 POO Project/img/delete-button.png");
+    height: 2rem;
+    width: 2rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.contenido-eliminar {
+    padding-right: 1rem;
 }
